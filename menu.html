@@ -1,0 +1,1139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mysore Darshini</title>
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- jquery, popperJs and bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUmSNrJ-7u705w7Sro0yGNBiWz_DsZZbI&v=3">
+        </script>
+        <style>
+            .btn-custom {
+                padding: 5 10;
+                background:  #d1202e;
+                color: floralwhite
+              }
+              
+              .btn-custom:hover {
+                background: floralwhite;
+                color: #d1202e
+              }
+        </style>
+</head>
+
+<body>
+    <section class="header">
+        <div class="header-strip">
+            <div class="header-strip-container">
+                <div class="header-strip-left">
+                    <span class="address">
+                        4025 Brandon Gate Drive Mississauga, ON, L4T 3Z9
+                    </span>
+                    <span class="phone">
+                        Phone: +1 905 956 7673
+                    </span>
+                </div>
+
+                <div class="header-strip-right">
+                    <span class="social-icons">
+                        <span><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></span>
+                        <span><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></span>
+                        <span><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></span>
+                    </span>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-links align-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./menu.html">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="banner menu-banner">
+            <div class="banner-text">
+                <div class="banner-text-2">
+                    MENU
+                </div>
+                <div class="banner-text-3">
+                   <a href="pdf/menu.pdf" class="btn btn-custom">DOWNLOAD MENU</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="menus">
+        <div class="container">
+            <div class="menu-header">
+                <div class="menu-header-heading">
+                    Our Menu
+                </div>
+            </div>
+
+        </div>
+
+        <div class="menu-corousel container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators menu-buttons">
+                    <div class="buttons" id="menu">
+                        <span class="button-1" data-target="#carouselExampleIndicators" data-slide-to="0"
+                            class="active">
+                            <p class="button-text">
+                                Soup & salad $3.00
+                            </p>
+                        </span>
+                        <span class="button-2" data-target="#carouselExampleIndicators" data-slide-to="1">
+                            <p class="button-text">
+                                Appetizers $5.00
+                            </p>
+                        </span>
+                        <span class="button-3" data-target="#carouselExampleIndicators" data-slide-to="2">
+                            <p class="button-text">
+                                IDLI $6.00
+                            </p>
+                        </span>
+                        <span class="button-4" data-target="#carouselExampleIndicators" data-slide-to="3">
+                            <p class="button-text">
+                                Dosa $10.00
+                            </p>
+                        </span>
+                        <span class="button-1" data-target="#carouselExampleIndicators" data-slide-to="4">
+                            <p class="button-text">
+                                Vegetable & lentils $8.00
+                            </p>
+                        </span>
+                        <span class="button-2" data-target="#carouselExampleIndicators" data-slide-to="5">
+                            <p class="button-text">
+                                Chicken & Eggs $10.00
+                            </p>
+                        </span>
+                        <span class="button-3" data-target="#carouselExampleIndicators" data-slide-to="6">
+                            <p class="button-text">
+                                Mutton & Fish $13.00
+                            </p>
+                        </span>
+                        <span class="button-4" data-target="#carouselExampleIndicators" data-slide-to="7">
+                            <p class="button-text">
+                                Rice $6.00
+                            </p>
+                        </span>
+                        <span class="button-1" data-target="#carouselExampleIndicators" data-slide-to="8">
+                            <p class="button-text">
+                                Roti $5.00
+                            </p>
+                        </span>
+                        <span class="button-2" data-target="#carouselExampleIndicators" data-slide-to="9">
+                            <p class="button-text">
+                                Pulao $10.00
+                            </p>
+                        </span>
+                        <span class="button-3" data-target="#carouselExampleIndicators" data-slide-to="10">
+                            <p class="button-text">
+                                Desert $4.00
+                            </p>
+                        </span>
+                        <span class="button-4" data-target="#carouselExampleIndicators" data-slide-to="11">
+                            <p class="button-text">
+                                Beverages $2.50
+                            </p>
+                        </span>
+                    </div>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row carousel-row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/soup/1.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Tomato Rasam
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Spicy tomato soup, slow cooked with red chilli, onion and spices
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/soup/3.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Moong Dal soup
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Lentil soup, slow cooked with mild spices and garnished with mustard,
+                                                curry leaves.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/soup/2.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Carrot Kosumbari
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Grated carrot with soaked lentils, grated coconut and chillies.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/soup/4.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Cucumber Kosumbari
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Diced cucumber with soaked lentils, grated coconut with chillies
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/appetizers/1.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Mysore Churmuri
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Popular street side evening snack: puffed rice mixed with onion, carrot,
+                                                chillies and spices
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/appetizers/3.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Masala Vada
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Spicy deep fried lentil dumplings with onion, chillies and spices.(4 per
+                                                plate)
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/appetizers/2.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Uddin Vada (Medu Vada)
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Mildly spiced lentil donuts with grated coconut and chillies.
+                                                (3 per plate)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/appetizers/4.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Mangalore Goli Bajji
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Favorite evening snacks for Mangalorean, prepared with flour, chillies,
+                                                coconut chunks and onions deep fried dumplings.(6 per plate)
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/idli/1.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Akki Idli
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Staple breakfast food of the south, steam cooked rice and lentil
+                                                dumplings.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/idli/3.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Uddinna Kadabhu
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Steam cooked lentil dumplings with spices
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/idli/2.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Rava idli
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Originated when rice became a scarcity in India, MTR hotel invented Rava
+                                                idli which is made with coarse wheat, steam cooked with grated carrot,
+                                                coconut, chillies, lentils and spices
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/idli/4.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Masala Idli
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Akki idli prepared with rice, lentil, onion, carrot and spices
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/dosa/1.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Plain Dosa
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Plain rice and lentil crepe
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/dosa/3.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Set Dosa
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Spongy pan cake shaped dosa.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/dosa/5.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Neer Dosa
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Thin and soft crepe made from Rice and coconut.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/dosa/2.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Mysore Masala Dosa
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Mysore Darshini takes pride in making this rice and lentil crepe stuffed
+                                                with potato baaji in authentic home style.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/dosa/4.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Onion Dosa
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Dosa dough mixed with onion, chillies, coconut and spices. A bit sour
+                                                and spicy
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/dosa/6.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Paper Dosa
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Thin and crispy dosa, roasted with ghee.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/vegetableLentils/1.png"
+                                                class="img-fluid menu-list-image" alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Moong Dal Fry
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Moong Dal (lentils) curry cooked with onion, Tomato, chillies and
+                                                spices.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/vegetableLentils/3.png"
+                                                class="img-fluid menu-list-image" alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Vegetable curry
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Carrot, Beans, Peas, onion and tomato cooked in green spicy curry
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/vegetableLentils/5.png"
+                                                class="img-fluid menu-list-image" alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Stuffed Egg plant (Brinjal)
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Slow cooked 2 egg plants stuffed with thick masala made from Onion,
+                                                groundnuts, garlic and spices
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/vegetableLentils/2.png"
+                                                class="img-fluid menu-list-image" alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Masoor Dal Curry
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Whole masoor dal slow cooked with garlic, onion, tomato and garam masala
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/vegetableLentils/4.png"
+                                                class="img-fluid menu-list-image" alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Bhindi Fry (Okra Fry)
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Pan fried cut bhindi sautéed with onion, tomato and spices.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/vegetableLentils/6.png"
+                                                class="img-fluid menu-list-image" alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Cabbage and carrot palya
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Cabbage and carrot sautéed with onion, chillies, spices and grated
+                                                coconut.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/chickenEgg/1.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Chilly Chicken (Andhra Style)
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Spicy semi gravy chicken made with green chillies and spices.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/chickenEgg/3.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Chicken 65
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Famous chicken fry dish in south India, fried with garlic, ginger, curry
+                                                leaves and spices.
+                                                As per the history, the dish was named due to its 65th placement in one
+                                                of the military canteen menu.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/chickenEgg/5.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Egg curry + Rice
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Egg cooked with onion, tomato and spices, served with steamed rice
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/chickenEgg/2.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Pepper Chicken
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Semi gravy spicy chicken with black pepper and curry leaves.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/chickenEgg/4.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Chicken curry + Rice
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Chicken cooked in green masala curry with grinded coconut and spices.
+                                                Served with steamed rice
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/chickenEgg/6.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Egg Burgi + 2 Chapatis
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Fried scrambled eggs with onion, tomato, chillies and mild spices
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/muttonFish/1.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Mutton Curry + Rice
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Spicy thick goat curry cooked with black pepper, green chillies and
+                                                spices.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/muttonFish/3.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Mutton Pepper Fry
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Semi dry spicy goat with black pepper and curry leaves.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/muttonFish/2.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Fish Pakoda
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Spicy breaded deep fried fish fillet
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/muttonFish/4.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Fish curry
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                King fish cooked with red chillies, spices and coconut milk
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/rice/1.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Lemon Rice
+
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Mildly spiced steam rice mixed with turmeric, onion, peanuts, chillies
+                                                and lemon juice.
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/rice/3.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Puliyogare (Tamarind Rice)
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Steamed rice mixed with tamarind, spices ground nuts and coconut
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/rice/2.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Bisi Bele Bath
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Steamed rice semi gravy cooked with spices, vegetables and lentils.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/rice/4.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Coconut Rice
+
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Steam rice cooked with coconut, ghee and aromatic spices.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/roti/1.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Chapati
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Flatbread made from whole wheat
+                                                (4 per Plate)
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/roti/2.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Masala Rice Roti
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Spicy flatbread made with rice flour, onion, chillies, coconut and
+                                                grated carrot. (2 per plate)
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/pulao/1.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Chicken pulao
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Rice and chicken cooked with spices.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/pulao/3.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Vegetable Pulao
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Rice cooked with vegetables and aromatic spices.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/pulao/2.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Mutton pulao
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Rice and goat cooked with spices
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/pulao/4.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Shrimp Pulao
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Rice cooked with shrimp and spices
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/deserrt/1.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Mysore Pak
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                A sweet delicacy which created specially for the Maharaja of Mysore,
+                                                made from lentil flour, sugar and ghee. (2 pieces per plate)
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/deserrt/3.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Akki Bele Payasa
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Rice kheer cooked with lentils and jaggery and seasoned with aromatic
+                                                spices
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/deserrt/2.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Kesari Bat
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Made with coarse wheat, sugar and ghee.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/deserrt/4.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Sweet Pongal
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Rice cooked with lentils, jaggery, dry fruits, cashew, almond and
+                                                aromatic spices.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/beverages/1.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Masala Chai
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Tea made with milk, aromatic spices and jaggery
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/beverages/3.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                South Indian Coffee
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Special blend filtered coffee with milk
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <div class="menu-image">
+                                            <img src="./images/menu/beverages/2.png" class="img-fluid menu-list-image"
+                                                alt="menu_list-item_image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <div class="menu-text-heading">
+                                                Canned Soda
+                                            </div>
+                                            <div class="menu-text-detail">
+                                                Coca Cola, Pepsi, Canada dry, Sprite, Fanta.
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev carousel-prep-button" href="#carouselExampleIndicators" role="button"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon carousel-prep-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next carousel-next-button" href="#carouselExampleIndicators" role="button"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon carousel-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="main-footer">
+            <div class="container footer-container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="address-heading">
+                            Address
+                        </div>
+                        <div class="address-text">
+                            4025 Brandon Gate Drive Mississauga,
+                            ON, L4T 3Z9
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="contact-heading">
+                            Contact Us
+                        </div>
+                        <div class="contact-text">
+                            Phone: +1 905 956 7673
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-social-icon">
+                            <span class="social-icons">
+                                <span><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></span>
+                                <span><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></span>
+                                <span><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 footer-image">
+                        <img src="./images/logo_bnw.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-strip">
+            <div class="footer-strip-center">
+                <span class="copy-right-text">
+                    © Copyright 2019 MysoreDarshini- All Rights Reserved
+                </span>
+                <span class="copy-left-text">
+                    Developed by <a class="link" href="https://pragra.co">Pragra</a>
+                </span>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('[data-slide-to=' + '0' + ']').addClass("active-button");
+        $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
+            var slideFrom = $(this).find('.active').index();
+            var slideTo = $(e.relatedTarget).index();
+            $('[data-slide-to=' + slideFrom + ']').removeClass("active-button");
+            $('[data-slide-to=' + slideTo + ']').addClass("active-button");
+        })
+    </script>
+</body>
+
+</html>
